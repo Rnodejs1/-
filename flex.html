@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <title>flex</title>
+</head>
+<body>
+    
+<div class="all">
+    <header>
+        <div class="hred">r</div>
+        <div class="hye">y</div>
+        <div class="hgreen">g</div>
+    </header>
+    <main>
+        <div class="ball">
+            <h1 id="ss" style="position: relative; top:-9px"></h1>
+            <h1 id="ss" style="position: relative; top:-9px"></h1>
+            <h1 id="ss" style="position: relative; top:-9px"></h1>
+            <h1 id="ss" style="position: relative; top:-9px"></h1>
+            
+        </div>
+        <div class="list">
+            <div class="user">
+                <div class="nname">name</div>
+                <div class="coment">cc</div>
+            </div>
+            <div class="user">
+                <div class="nname">hhh</div>
+                <div class="coment">jjjjjj</div>
+            </div><div class="user">
+                <div class="nname">name</div>
+                <div class="coment">name</div> </div><div class="user">
+                    <div class="nname">name</div>
+                    <div class="coment">name</div> </div><div class="user">
+                        <div class="nname">name</div>
+                        <div class="coment">name</div> </div><div class="user">
+                            <div class="nname">name</div>
+                            <div class="coment">name</div> </div><div class="user">
+                                <div class="nname">name</div>
+                                <div class="coment">name</div> </div><div class="user">
+                                    <div class="nname">name</div>
+                                    <div class="coment">name</div>
+            </div><div class="user">
+                <div class="nname">name</div>
+                <div class="coment">name</div>
+            </div><div class="user">
+                <div class="nname">name</div>
+                <div class="coment">name</div>
+            </div><div class="user">
+                <div class="nname">name</div>
+                <div class="coment">name</div>
+            </div><div class="user">
+                <div class="nname">name</div>
+                <div class="coment">name</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</div>
+<script src="flex.js"></script>
+
+<div class="body1">
+<div class="loader">
+    <span class="s1"></span>
+    <span class="s1"></span>
+    <span class="s1"></span>
+    <h3>loadding</h3>
+</div></div>
+    <script defer>
+    window.onload=()=>{
+         setTimeout(()=>{
+            const a=document.querySelector(".body1");
+            const g=document.querySelector(".all")
+           
+            a.classList.add("f");
+            g.style.visibility="visible";
+            
+            const b=document.querySelector(".s1");
+
+            
+        },13333);}
+    
+    </script>
+
+</body>
+</html>

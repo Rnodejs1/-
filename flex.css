@@ -1,0 +1,163 @@
+
+#ss{
+    
+        width: 10px;
+        height: 10px;
+    background-color: white;
+}
+.ball{
+    z-index: 1;
+    position: relative;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+body{display: flex;
+
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+header{
+    display: grid;
+    grid-template: "red ye gtr"
+                    / calc(100%/3);
+    background-color: rgb(255, 255, 255);
+    height:163px; 
+    border: 1px solid black;
+}
+
+.hred{  
+    grid-area: "red";
+    background-color: rgb(139, 51, 24);
+   
+    height: 50%;
+}
+
+.hye{grid-area: "ye";
+    background-color: rgb(184, 181, 56);    
+    height: 50%;
+
+}
+.body1{
+    background: rgb(113, 125, 151);
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;transition-delay: 0.4s;
+    transition: all .4s;
+    
+}
+/* */
+.f,.f *{
+    opacity: 0;
+    animation-play-state:paused
+}
+.loader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 555px;height: 555px;
+   
+}
+
+.s1{border: 1px solid rgb(33, 55, 95);border-radius:763px 555px 883px  613px ;
+    animation: r1 5s linear infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   }
+.s1:nth-child(2){animation-delay: 1s;
+
+
+}
+.s1:nth-child(3){ animation-delay: 2s; 
+
+
+}
+@keyframes r1{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+.hgreen{
+    grid-area: "gtr";
+   height: 50%;
+   background-color: rgb(63, 143, 44);
+}
+p{
+    color: white;width: 10px;height: 10px;
+      background: white;
+      border-radius:100%;
+      
+  }.all{position: absolute; width:100%; height: 100%  ;  
+    visibility: hidden; transition: all .4s;  
+    }
+main{
+    background: linear-gradient(33deg, #54d0ff 11%, #eb8fde 66%, #ff7688c0 44%);animation: gradient 5s ease infinite;
+
+ transition: .8s;
+    position: relative;
+    
+}
+
+
+@keyframes gradient {
+0% {background-position: 100% 0%;}
+100% {background-position: 0% 0%;}
+}
+.list{    z-index: 3; 
+
+    display: grid;
+    grid-template: repeat(4, 25%); 
+    width: 24%;
+    min-height: 31vh;
+    box-sizing: border-box;
+    
+    
+    background-color: green;
+
+
+}
+
+.user{
+    transition: .8s;
+    box-sizing: border-box;
+   margin: 10px;
+   padding: 3px;
+  color: black;
+    background-color: rgb(97, 153, 122);
+}
+
+.user:hover{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 3px;
+    transform: scale(1.1);
+     background-color: rgb(97, 153, 122);
+ }
+.nname{width: 100%;
+    background-color: rgb(40, 86, 129);
+}
+
+ .user:nth-child(4n-1){
+    background-color: rgb(207, 185, 205);
+}
+ .user:nth-child(4n){
+     background-color: rgb(102, 31, 52);
+ }
+footer{
+    height:100px;
+    background-color: rgb(13, 9, 34);
+}
